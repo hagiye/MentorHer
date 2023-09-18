@@ -10,7 +10,10 @@ app.get('/', (req, res) => {
 });
 
 
+app.post('/api/users', (req,res) =>{
 
+  res.send(req.body.username);
+})
 
 
 const listener = app.listen(process.env.PORT || 3000, () => {
